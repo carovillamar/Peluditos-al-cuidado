@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Contacto | Cuidadora de Mascotas en Madrid | Peluditos al Cuidado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Contacto con Peluditos al Cuidado: cuidadora de mascotas en Madrid. Reserva paseos, visitas a domicilio o acompañamiento al veterinario por WhatsApp o formulario." />
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="site-header">
+        <a href="index.html" class="logo" aria-label="Peluditos al Cuidado">
+            <span class="parte1">Peluditos</span>
+            <span class="parte2">al Cuidado</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Abrir menú" aria-controls="primary-nav" aria-expanded="false">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </button>
+
+        <nav id="primary-nav">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="http://localhost:8000/blog">Blog</a></li>
+                <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema" aria-pressed="false"
+            title="Cambiar tema">
+            <svg class="sun" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                <circle cx="12" cy="12" r="5"></circle>
+                <g stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="1" x2="12" y2="4"></line>
+                    <line x1="12" y1="20" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"></line>
+                    <line x1="17.66" y1="17.66" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="4" y2="12"></line>
+                    <line x1="20" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"></line>
+                    <line x1="17.66" y1="6.34" x2="19.78" y2="4.22"></line>
+                </g>
+            </svg>
+            <svg class="moon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+            </svg>
+        </button>
+    </header>
+
+    <!-- HERO CONTACTO -->
+    <section class="contacto-hero">
+        <div class="container contacto-hero-inner">
+            <div class="contacto-hero-text">
+                <h1>Contacto</h1>
+                <p>
+                    Escríbeme y coordinamos el servicio ideal para tu mascota.
+                    Respondo lo antes posible y siempre seré yo quien te atienda.
+                </p>
+
+                <div class="contacto-hero-ctas">
+                    <a class="btn-cta whatsapp-btn"
+                        href="https://wa.me/34619314797?text=Hola%20Carolina%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20cuidado%20de%20mascotas"
+                        target="_blank" rel="noopener noreferrer">
+                        <span>Escríbeme por WhatsApp</span>
+                    </a>
+                </div>
+
+                <p class="contacto-nota">
+                    * Zonas: Madrid y alrededores. Los precios pueden variar por distancia y duración.
+                </p>
+            </div>
+
+            <!-- Imagen decorativa opcional -->
+            <img class="contacto-hero-img" src="fotos/CONTACTOheader.png" alt="" aria-hidden="true" loading="eager" />
+        </div>
+    </section>
+
+    <!-- CONTENIDO -->
+    <main class="contacto-page">
+        <div class="container contacto-grid">
+
+            <!-- FORM -->
+            <section class="contacto-card" id="formulario" aria-labelledby="titulo-form">
+                <h2 id="titulo-form">Formulario</h2>
+                <p class="contacto-sub">
+                    Cuéntame qué necesitas (paseos, visitas, veterinario) y tu zona aproximada.
+                </p>
+
+                <form class="contacto-form" action="#" method="post">
+                    <div class="field">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" type="text" autocomplete="name" required />
+                    </div>
+
+                    <div class="field">
+                        <label for="telefono">Teléfono / WhatsApp</label>
+                        <input id="telefono" name="telefono" type="tel" autocomplete="tel" required />
+                    </div>
+
+                    <div class="field">
+                        <label for="zona">Zona (barrio / municipio)</label>
+                        <input id="zona" name="zona" type="text" autocomplete="address-level2" required />
+                    </div>
+
+                    <div class="field">
+                        <label for="servicio">Servicio</label>
+                        <select id="servicio" name="servicio" required>
+                            <option value="" selected disabled>Selecciona una opción</option>
+                            <option value="paseos">Paseos</option>
+                            <option value="visitas">Visitas a domicilio</option>
+                            <option value="veterinario">Acompañamiento al veterinario</option>
+                            <option value="otros">Otro / consultar</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required
+                            placeholder="Ej: Paseo 45 min, 3 días por semana. Vivo en ..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-cta">Enviar</button>
+
+                    <p class="contacto-legal">
+                        Al enviar aceptas la <a href="politica-privacidad.html">Política de privacidad</a>.
+                    </p>
+                </form>
+            </section>
+
+            <!-- INFO RÁPIDA -->
+            <aside class="contacto-card" aria-labelledby="titulo-info">
+                <h2 id="titulo-info">Información</h2>
+
+                <ul class="contacto-info">
+                    <li>
+                        <span class="k">WhatsApp</span>
+                        <a class="v" href="https://wa.me/34619314797" target="_blank" rel="noopener noreferrer">+34 619
+                            31 47 97</a>
+                    </li>
+                    <li>
+                        <span class="k">Zona</span>
+                        <span class="v">Madrid y alrededores</span>
+                    </li>
+                    <li>
+                        <span class="k">Horario</span>
+                        <span class="v">A convenir (según disponibilidad)</span>
+                    </li>
+                    <li>
+                        <span class="k">Respuesta</span>
+                        <span class="v">Lo antes posible</span>
+                    </li>
+                </ul>
+
+                <div class="contacto-mini">
+                    <h3>Antes de escribirme</h3>
+                    <p>Para responderte rápido, dime: servicio, zona, fechas/horarios y tipo de mascota.</p>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-simple">
+            <p>&copy; 2026 Peluditos al Cuidado · Madrid</p>
+
+            <div class="footer-legal-links">
+                <a href="aviso-legal.html">Aviso legal</a>
+                <span>|</span>
+                <a href="politica-privacidad.html">Política de privacidad</a>
+                <span>|</span>
+                <a href="politica-cookies.html">Política de cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js" defer></script>
+</body>
+
+</html>

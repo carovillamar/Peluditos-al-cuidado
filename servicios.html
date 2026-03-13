@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Servicios | Peluditos al Cuidado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Servicios de cuidado de mascotas en Madrid: paseos, visitas a domicilio, acompañamiento al veterinario y atención personalizada." />
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- HEADER (igual que el tuyo) -->
+    <header class="site-header">
+        <a href="index.html" class="logo" aria-label="Peluditos al Cuidado">
+            <span class="parte1">Peluditos</span>
+            <span class="parte2">al Cuidado</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Abrir menú" aria-controls="primary-nav" aria-expanded="false">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </button>
+
+        <nav id="primary-nav">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicios.html" aria-current="page">Servicios</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="http://localhost:8000/blog">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema" aria-pressed="false"
+            title="Cambiar tema">
+            <svg class="sun" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                <circle cx="12" cy="12" r="5"></circle>
+                <g stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="1" x2="12" y2="4"></line>
+                    <line x1="12" y1="20" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"></line>
+                    <line x1="17.66" y1="17.66" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="4" y2="12"></line>
+                    <line x1="20" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"></line>
+                    <line x1="17.66" y1="6.34" x2="19.78" y2="4.22"></line>
+                </g>
+            </svg>
+            <svg class="moon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+            </svg>
+        </button>
+    </header>
+
+    <!-- HERO SERVICIOS -->
+    <section class="servicios-hero">
+        <div class="container servicios-hero-inner">
+
+            <div class="servicios-hero-text">
+                <h1>Servicios</h1>
+                <p>
+                    Elige el tipo de cuidado que necesitas. Siempre conmigo, con rutinas respetadas y actualizaciones.
+                </p>
+            </div>
+
+            <div class="servicios-hero-media">
+                <img class="servicios-hero-img" src="fotos/servicios.png"
+                    alt="Perro y gato representando los servicios de cuidado" />
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LISTA DE SERVICIOS -->
+    <main class="servicios-page">
+        <div class="container servicios-grid">
+
+            <article class="servicio-card">
+                <h2>Paseos</h2>
+                <p>Paseos adaptados a su energía y necesidades: desde 45 min hasta 1 hora según la distancia y rutina.
+                </p>
+                <ul>
+                    <li> Paseo estándar (45 min) — 8 €</li>
+                    <li> Paseo largo (60 min) — 10 €</li>
+                    <li> Fin de semana o festivos — 12 €</li>
+                </ul>
+            </article>
+
+            <article class="servicio-card">
+                <h2>Visitas a domicilio</h2>
+                <p>Visitas para comida, agua y compañía, ideales para gatos o mascotas que se quedan en casa.</p>
+                <ul>
+                    <li> Visita estándar (45 min - 1 hora) — 18 €</li>
+                    <li> Visita prolongada (mas de 1 hora) — 20 €</li>
+                    <li> Actualización con foto incluida</li>
+                </ul>
+            </article>
+
+            <article class="servicio-card">
+                <h2>Acompañamiento al veterinario</h2>
+                <p>Acompañamiento y apoyo en citas con el veterinario (traslado incluido si está cerca).</p>
+                <ul>
+                    <li> Servicio básico — 25 €</li>
+                    <li> Mayor distancia o espera extra — según acuerdo</li>
+                </ul>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- BLOQUE CONFIANZA -->
+    <section class="servicios-confianza">
+        <div class="container">
+            <p class="confianza-texto">
+                Cada mascota es única.
+                Se cuida su carácter, su energía y su espacio personal, respetando siempre sus tiempos y rutinas.
+            </p>
+
+            <p class="confianza-texto">
+                Recibirás fotos y actualizaciones durante cada visita o paseo para que siempre sepas cómo está tu
+                peludito.
+            </p>
+
+            <p class="confianza-texto nota-precio">
+                En el caso de los paseos, el precio puede variar según la distancia desde mi domicilio y la duración del
+                servicio.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="servicios-cta">
+        <div class="container">
+            <h2>¿No sabes cuál elegir?</h2>
+            <p>Escríbeme por WhatsApp y te recomiendo el servicio ideal según tu mascota y tu rutina.</p>
+            <a class="btn-cta whatsapp-btn"
+                href="https://wa.me/34619314797?text=Hola%20Carolina%2C%20quiero%20ayuda%20para%20elegir%20un%20servicio"
+                target="_blank" rel="noopener noreferrer">
+                <span>Escríbeme por WhatsApp</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER (igual que el tuyo) -->
+    <footer class="site-footer">
+        <div class="footer-simple">
+            <p>&copy; 2026 Peluditos al Cuidado · Madrid</p>
+
+            <div class="footer-legal-links">
+                <a href="aviso-legal.html">Aviso legal</a>
+                <span>|</span>
+                <a href="politica-privacidad.html">Política de privacidad</a>
+                <span>|</span>
+                <a href="politica-cookies.html">Política de cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js" defer></script>
+
+</body>
+
+</html>

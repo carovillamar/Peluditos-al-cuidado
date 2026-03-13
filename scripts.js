@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initToTop();            // Botón volver arriba (si existe #toTop)
   initThemeToggle();      // Lógica del interruptor (persistencia)
   initMobileNav();        // Menú hamburguesa accesible en móviles
+  initFAQ();              // FAQ
 });
 
 // ===============================
@@ -376,3 +377,23 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(()=> pawWrap.classList.remove('animate-once'), 900);
   }
 });
+
+// ===============================
+// 9) FAQ - Solo uno abierto a la vez
+// ===============================
+function initFAQ() {
+  const faqs = document.querySelectorAll(".faq details");
+  if (!faqs.length) return;
+
+  faqs.forEach((faq) => {
+    faq.addEventListener("toggle", () => {
+      if (faq.open) {
+        faqs.forEach((other) => {
+          if (other !== faq) {
+            other.open = false;
+          }
+        });
+      }
+    });
+  });
+}
